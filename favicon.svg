@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#1E2A78" flood-opacity="0.25"/>
+    </filter>
+    <g id="barbell">
+      <rect x="3" y="15" width="6" height="18" rx="2.5"/>
+      <rect x="9" y="10" width="7" height="28" rx="2.5"/>
+      <rect x="16" y="21" width="16" height="6" rx="2"/>
+      <rect x="32" y="10" width="7" height="28" rx="2.5"/>
+      <rect x="39" y="15" width="6" height="18" rx="2.5"/>
+    </g>
+    <path id="heart" d="M24 42C12 33 5 26 5 18.5 5 12.7 9.5 8 15 8c3.9 0 7.2 2.2 9 5.4C25.8 10.2 29.1 8 33 8c5.5 0 10 4.7 10 10.5C43 26 36 33 24 42z"/>
+    <path id="sparkle" d="M24 3c2 15 6 19 21 21-15 2-19 6-21 21-2-15-6-19-21-21 15-2 19-6 21-21z"/>
+  </defs>
+  <rect width="512" height="512" fill="#FFF0A3"/>
+  <!-- barbell: centred, inside the maskable safe zone -->
+  <g filter="url(#shadow)" transform="translate(256 262) rotate(-14) scale(6.2) translate(-24 -24)">
+    <use href="#barbell" fill="#fff" stroke="#fff" stroke-width="5" stroke-linejoin="round"/>
+    <use href="#barbell" fill="#FF5B1F"/>
+  </g>
+  <g filter="url(#shadow)" transform="translate(338 150) rotate(14) scale(2.3) translate(-24 -24)">
+    <use href="#heart" fill="#fff" stroke="#fff" stroke-width="6" stroke-linejoin="round"/>
+    <use href="#heart" fill="#EE3A8C"/>
+    <ellipse cx="14" cy="16" rx="3" ry="4.5" transform="rotate(-30 14 16)" fill="#fff" opacity="0.55"/>
+  </g>
+  <g filter="url(#shadow)" transform="translate(168 370) rotate(-8) scale(1.7) translate(-24 -24)">
+    <use href="#sparkle" fill="#fff" stroke="#fff" stroke-width="6" stroke-linejoin="round"/>
+    <use href="#sparkle" fill="#1E8FE1"/>
+  </g>
+</svg>
